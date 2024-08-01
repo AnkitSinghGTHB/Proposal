@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 3</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function moveButton() {
+            const button = document.getElementById('noButton');
+            const x = Math.floor(Math.random() * window.innerWidth);
+            const y = Math.floor(Math.random() * window.innerHeight);
+            button.style.position = 'absolute';
+            button.style.left = `${x}px`;
+            button.style.top = `${y}px`;
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn.pixabay.com/animation/2023/10/10/13/25/13-25-40-109_512.gif" alt="Image 3">
+        <h1>Do you like JavaScript?</h1>
+        <button class="btn"onclick="location.href='thanks.html'">Yes</button>
+        <button class="btn"id="noButton" onclick="moveButton()">No</button>
+    </div>
+</body>
+</html>
